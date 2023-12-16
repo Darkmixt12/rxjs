@@ -17,6 +17,8 @@ interface Personaje {
 	nombre: string;
 }
 
+let resultadopersonaje: Personaje;
+
 const personajes: Personaje[] = [
 	{
 	  tipo: 'heroe',
@@ -42,4 +44,7 @@ from(personajes).pipe(
 		return tipo != 'heroe' 
 		
 	})
-).subscribe( console.log)
+).subscribe( resul => {
+	resul = resultadopersonaje
+	console.log(resultadopersonaje)
+})
