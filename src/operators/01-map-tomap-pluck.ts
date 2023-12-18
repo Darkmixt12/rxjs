@@ -21,6 +21,7 @@ keyUpCode$.subscribe( val => console.log('map', val));
 //! y necesitamos que salga el valor de ese valor del objeto 
 
 const keyUpPlock$ = keyup$.pipe(
+	
 	pluck('target', 'baseURI')
 );
 
