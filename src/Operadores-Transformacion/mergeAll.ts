@@ -1,6 +1,5 @@
 import { debounceTime, fromEvent, map, pluck } from 'rxjs';
 import { ajax } from 'rxjs/ajax'
-import {GithubUsers, } from './interfaces/user'
 
 const body= document.querySelector('body');
 const textInput = document.createElement('input')
